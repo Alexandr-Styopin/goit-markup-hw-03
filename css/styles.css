@@ -11,9 +11,44 @@
   --secondary-background: #f5f4fa;
   --footer-background: #2f303a;
 }
+/*---- reset ---- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
-ul {
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
   list-style-type: none;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------- */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* border: tomato solid; */
 }
 
 body {
@@ -27,6 +62,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--prmary-text-color);
+  background-color: var(--primary-background-color);
 }
 
 /* header */
@@ -41,6 +77,8 @@ body {
   line-height: 1.19;
 
   color: var(--logo-color-black);
+
+  /* border: tomato solid; */
 }
 .logo-dec {
   color: var(--accent-color);
@@ -60,7 +98,7 @@ body {
   color: var(--title-text-color);
 }
 
-.header-contact a {
+.header-contact-items a {
   font-weight: 500;
 
   letter-spacing: 0.02em;
@@ -78,6 +116,9 @@ body {
 }
 
 .hero-title {
+  margin: 0 auto;
+  max-width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -85,15 +126,19 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  white-space: pre;
 
   color: var(--text-whte);
 }
 
 .hero-button {
+  margin: 0 auto;
+
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+
+  margin-top: 30px;
 
   letter-spacing: 0.06em;
   color: var(--text-whte);
@@ -105,20 +150,35 @@ body {
 .hero-button:focus {
   background-color: var(--button-hover);
 }
-/* Осоености */
 
+/* Осоености */
+.feature {
+  margin-top: 94px;
+}
+.feature-items {
+  display: flex;
+}
+.feature-item {
+  width: 270px;
+  margin-left: 30px;
+}
 .feature-title {
   font-weight: 700;
 
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  white-space: normal;
 
   color: var(--title-text-color);
 }
 
 .feature-text {
+  margin-top: 10px;
+
   line-height: 1.7;
   letter-spacing: 0.03em;
+  white-space: normal;
+
   color: var(--prmary-text-color);
 }
 
@@ -215,7 +275,7 @@ body {
   color: var(--text-whte);
 }
 
-.footer-contact a {
+.footer-contact-items a {
   text-decoration: none;
 
   line-height: 1.7;
