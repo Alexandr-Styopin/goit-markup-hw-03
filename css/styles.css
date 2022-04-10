@@ -113,6 +113,10 @@ body {
   display: flex;
   margin-left: 93px;
 }
+
+.nav-item .active {
+  color: var(--accent-color);
+}
 /* --------------------contact--------------------- */
 .header-contact-iteams .contact-iteam:not(:first-child) {
   margin-left: 50px;
@@ -137,6 +141,7 @@ body {
   display: flex;
   margin-left: auto;
 }
+
 /* -------------------main-nav--------------------- */
 .main-nav {
   display: flex;
