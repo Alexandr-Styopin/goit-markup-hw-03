@@ -6,12 +6,14 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --text-whte: #ffffff;
   --logo-color-black: #000000;
+  --header-border: rgba(236, 236, 236, 1);
 
   --primary-background-color: #ffffff;
   --secondary-background: #f5f4fa;
   --footer-background: #2f303a;
 }
 /*---- reset ---- */
+
 h1,
 h2,
 h3,
@@ -28,9 +30,9 @@ ol {
   padding-left: 0;
 }
 
-img {
+/* img {
   display: block;
-}
+} */
 
 .list {
   list-style-type: none;
@@ -48,7 +50,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* border: tomato solid; */
 }
 
 body {
@@ -67,52 +68,89 @@ body {
 
 /* header */
 
-/* logo */
 .logo {
   text-decoration: none;
-
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
   color: var(--logo-color-black);
-
-  /* border: tomato solid; */
 }
+
 .logo-dec {
   color: var(--accent-color);
 }
+/* ---------------header-nav--------------- */
 
-/* header navgation*/
-
-.header a {
-  text-decoration: none;
+.header {
+  /* background-color: #757575; */
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: var(--header-border);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
-.site-nav a {
+.site-nav .nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
   font-weight: 500;
-
   letter-spacing: 0.02em;
-
   color: var(--title-text-color);
 }
 
-.header-contact-items a {
-  font-weight: 500;
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+/* --------------------contact--------------------- */
+.header-contact-iteams .contact-iteam:not(:first-child) {
+  margin-left: 50px;
+}
 
+.header-contact-iteams .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  font-weight: 500;
   letter-spacing: 0.02em;
 
   color: var(--prmary-text-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+.header-contact {
+  display: flex;
 }
-/* Hero */
+.header-contact-iteams {
+  display: flex;
+  margin-left: auto;
+}
+/* -------------------main-nav--------------------- */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------Hero------------------ */
 .hero {
   background-color: var(--footer-background);
+}
+
+.hero-iteams {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -131,9 +169,14 @@ body {
 }
 
 .hero-button {
-  margin: 0 auto;
-
   display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: 0;
+  border-radius: 4px;
+
+  border-block: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -150,21 +193,19 @@ body {
 .hero-button:focus {
   background-color: var(--button-hover);
 }
+/* ----------feature----------- */
 
-/* Осоености */
-.feature {
-  margin-top: 94px;
-}
-.feature-items {
+.feature-iteams {
   display: flex;
+  padding-top: 94px;
 }
-.feature-item {
+
+.feature-iteam {
   width: 270px;
   margin-left: 30px;
 }
 .feature-title {
   font-weight: 700;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
   white-space: normal;
@@ -184,6 +225,17 @@ body {
 
 /* Чем мы занимаемся */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-iteams {
+  display: flex;
+}
+.section-iteam:not(:first-child) {
+  margin-left: 30px;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -194,8 +246,24 @@ body {
   color: var(--title-text-color);
 }
 
+.section-iteams {
+  margin-top: 50px;
+  text-align: center;
+}
 /* Наша команда */
+.section-iteam img {
+  display: block;
+}
+.saction-team {
+  background-color: var(--secondary-background);
+}
 
+.text-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
+}
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -203,22 +271,35 @@ body {
 
   color: var(--title-text-color);
 }
-
-/* portfolo*/
+.speciality {
+  margin-top: 10px;
+}
+/* ---------------------------portfolo*-----------------------/
 
 /* flter portfolo*/
 
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
 .filter-button {
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-
   text-align: center;
   letter-spacing: 0.03em;
-
   background-color: var(--secondary-background);
 
   cursor: pointer;
+}
+.filter-iteam:not(:first-child) {
+  margin-left: 8px;
 }
 
 .filter-button:hover,
@@ -228,8 +309,23 @@ body {
 }
 
 /* Примеры работ */
+.link img {
+  display: block;
+}
 
-.project a {
+.project {
+  padding-top: 50px;
+  padding-bottom: 94px;
+
+  /* background-color: tomato; */
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project .link {
   text-decoration: none;
 }
 
@@ -243,14 +339,39 @@ body {
   color: var(--title-text-color);
 }
 
+.project-iteam {
+  margin-right: 30px;
+  padding-bottom: 30px;
+}
+
+.project-iteam:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project-iteam:nth-last-child(-n + 3) {
+  padding-bottom: 0px;
+}
+
 .project-category {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.8;
 
   color: var(--prmary-text-color);
 }
 
+.text-content-iteam {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 24px;
+  background-color: var(--primary-background-color);
+}
+
 /* footer */
+.footer-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer {
   background-color: var(--footer-background);
@@ -269,16 +390,24 @@ body {
   color: var(--accent-color);
 }
 .footer-address {
+  margin-top: 20px;
+}
+.footer-address {
   font-style: normal;
   line-height: 1.7;
 
   color: var(--text-whte);
 }
 
-.footer-contact-items a {
+.footer-contact-items .link {
   text-decoration: none;
 
   line-height: 1.7;
 
   color: var(--footer-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
