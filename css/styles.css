@@ -31,8 +31,26 @@ ol {
   padding-left: 0;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+}
+
 .list {
   list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* -------------------------------------- */
@@ -141,12 +159,10 @@ body {
 /* -------------------Hero----------------*/
 
 .hero {
-  background-color: var(--footer-background);
-}
-
-.hero-iteams {
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-color: var(--footer-background);
 }
 
 .hero-title {
@@ -164,12 +180,14 @@ body {
 
 .hero-button {
   display: block;
+
   margin: 0 auto;
   margin-top: 30px;
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -188,13 +206,12 @@ body {
 
 /* -----------------feature-------------- */
 
-.feature-section-title {
-  display: none;
+.feature {
+  padding-top: 94px;
 }
 
 .feature-iteams {
   display: flex;
-  padding-top: 94px;
 }
 
 .feature-iteam {
@@ -203,9 +220,9 @@ body {
 }
 .feature-title {
   font-weight: 700;
+  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  white-space: normal;
 
   color: var(--title-text-color);
 }
@@ -250,10 +267,6 @@ body {
 
 /* -----------------team------------------*/
 
-.section-iteam img {
-  display: block;
-}
-
 .saction-team {
   background-color: var(--secondary-background);
 }
@@ -266,6 +279,8 @@ body {
 }
 
 .name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -274,14 +289,9 @@ body {
 }
 
 .speciality {
-  margin-top: 10px;
 }
 
 /*------------------flter portfolo--------*/
-
-.filter-title {
-  display: none;
-}
 
 .filter-buttons {
   display: flex;
@@ -294,6 +304,7 @@ body {
   border: 0;
   border-radius: 4px;
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -316,21 +327,17 @@ body {
 
 /* ------------------- portfolio-------- */
 
-.link img {
-  display: block;
-}
-
 .project {
   padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 
-.project .link {
+.project-iteam .link {
   text-decoration: none;
 }
 
@@ -376,12 +383,11 @@ body {
 }
 
 /*----------------footer------------------*/
-.footer-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-background);
 }
 
