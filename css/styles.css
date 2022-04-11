@@ -12,7 +12,8 @@
   --secondary-background: #f5f4fa;
   --footer-background: #2f303a;
 }
-/*---- reset ---- */
+
+/*---------------- reset ---------------- */
 
 h1,
 h2,
@@ -30,20 +31,11 @@ ol {
   padding-left: 0;
 }
 
-/* img {
-  display: block;
-} */
-
 .list {
   list-style-type: none;
 }
 
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* ----------------------------------------------------- */
+/* -------------------------------------- */
 
 .container {
   width: 1200px;
@@ -59,14 +51,12 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.03em;
-
   color: var(--prmary-text-color);
   background-color: var(--primary-background-color);
 }
 
-/* header */
+/* ----------------header---------------- */
 
 .logo {
   text-decoration: none;
@@ -80,13 +70,12 @@ body {
 .logo-dec {
   color: var(--accent-color);
 }
-/* ---------------header-nav--------------- */
+
+/* ----------------header-nav------------ */
 
 .header {
-  /* background-color: #757575; */
+  border: 1px var(--header-border);
   border-style: none none solid none;
-  border-width: 1px;
-  border-color: var(--header-border);
 }
 .header-nav {
   display: flex;
@@ -117,7 +106,9 @@ body {
 .nav-item .active {
   color: var(--accent-color);
 }
-/* --------------------contact--------------------- */
+
+/* --------------------header contact---- */
+
 .header-contact-iteams .contact-iteam:not(:first-child) {
   margin-left: 50px;
 }
@@ -137,18 +128,19 @@ body {
 .header-contact {
   display: flex;
 }
+
 .header-contact-iteams {
   display: flex;
   margin-left: auto;
 }
 
-/* -------------------main-nav--------------------- */
 .main-nav {
   display: flex;
   align-items: center;
 }
 
-/* ---------------Hero------------------ */
+/* -------------------Hero----------------*/
+
 .hero {
   background-color: var(--footer-background);
 }
@@ -165,28 +157,21 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: var(--text-whte);
 }
 
 .hero-button {
-  display: block;
-  margin: 0 auto;
+  margin-top: 30px;
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
 
-  border-block: var(--accent-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-
-  margin-top: 30px;
 
   letter-spacing: 0.06em;
   color: var(--text-whte);
@@ -198,7 +183,8 @@ body {
 .hero-button:focus {
   background-color: var(--button-hover);
 }
-/* ----------feature----------- */
+
+/* -----------------feature-------------- */
 
 .feature-iteams {
   display: flex;
@@ -228,7 +214,7 @@ body {
   color: var(--prmary-text-color);
 }
 
-/* Чем мы занимаемся */
+/* -----------------specialization--------*/
 
 .section {
   padding-top: 94px;
@@ -255,7 +241,9 @@ body {
   margin-top: 50px;
   text-align: center;
 }
-/* Наша команда */
+
+/* -----------------team------------------*/
+
 .section-iteam img {
   display: block;
 }
@@ -269,6 +257,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
 }
+
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -276,12 +265,12 @@ body {
 
   color: var(--title-text-color);
 }
+
 .speciality {
   margin-top: 10px;
 }
-/* ---------------------------portfolo*-----------------------/
 
-/* flter portfolo*/
+/*------------------flter portfolo--------*/
 
 .filter-buttons {
   display: flex;
@@ -303,6 +292,7 @@ body {
 
   cursor: pointer;
 }
+
 .filter-iteam:not(:first-child) {
   margin-left: 8px;
 }
@@ -313,7 +303,8 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Примеры работ */
+/* ------------------- portfolio-------- */
+
 .link img {
   display: block;
 }
@@ -321,8 +312,6 @@ body {
 .project {
   padding-top: 50px;
   padding-bottom: 94px;
-
-  /* background-color: tomato; */
 }
 
 .project-list {
@@ -366,13 +355,16 @@ body {
 }
 
 .text-content-iteam {
+  border: 1px var(--header-border);
+  border-style: none solid solid solid;
+
   padding-top: 20px;
   padding-bottom: 30px;
   padding-left: 24px;
   background-color: var(--primary-background-color);
 }
 
-/* footer */
+/*----------------footer------------------*/
 .footer-main {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -381,6 +373,7 @@ body {
 .footer {
   background-color: var(--footer-background);
 }
+
 .logo-footer {
   text-decoration: none;
 
@@ -391,12 +384,15 @@ body {
 
   color: var(--text-whte);
 }
+
 .logo-footer-dec {
   color: var(--accent-color);
 }
+
 .footer-address {
   margin-top: 20px;
 }
+
 .footer-address {
   font-style: normal;
   line-height: 1.7;
