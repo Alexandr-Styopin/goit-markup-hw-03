@@ -325,7 +325,7 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .project-iteam .link {
