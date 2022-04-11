@@ -180,14 +180,13 @@ body {
 
 .hero-button {
   display: block;
-
   margin: 0 auto;
   margin-top: 30px;
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
 
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -288,15 +287,11 @@ body {
   color: var(--title-text-color);
 }
 
-.speciality {
-}
-
 /*------------------flter portfolo--------*/
 
 .filter-buttons {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 
 .filter-button {
@@ -304,7 +299,7 @@ body {
   border: 0;
   border-radius: 4px;
 
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -326,10 +321,6 @@ body {
 }
 
 /* ------------------- portfolio-------- */
-
-.project {
-  padding-top: 50px;
-}
 
 .project-list {
   display: flex;
