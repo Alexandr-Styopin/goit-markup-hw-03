@@ -379,7 +379,6 @@ body {
 
 .logo-footer {
   text-decoration: none;
-
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -394,23 +393,21 @@ body {
 
 .footer-address {
   margin-top: 20px;
-}
 
-.footer-address {
   font-style: normal;
   line-height: 1.7;
-
   color: var(--text-whte);
 }
 
-.footer-contact-items .link {
+.footer-contact-iteams .link {
   text-decoration: none;
-
   line-height: 1.7;
-
   color: var(--footer-text-color);
 }
 
+.contact-iteam {
+  padding-top: 9px;
+}
 .link:hover,
 .link:focus {
   color: var(--accent-color);
