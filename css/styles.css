@@ -188,6 +188,10 @@ body {
 
 /* -----------------feature-------------- */
 
+.feature-section-title {
+  display: none;
+}
+
 .feature-iteams {
   display: flex;
   padding-top: 94px;
@@ -274,6 +278,10 @@ body {
 }
 
 /*------------------flter portfolo--------*/
+
+.filter-title {
+  display: none;
+}
 
 .filter-buttons {
   display: flex;
