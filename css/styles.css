@@ -31,7 +31,7 @@ ol {
   padding-left: 0;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
 }
@@ -215,8 +215,12 @@ body {
 
 .feature-iteam {
   width: 270px;
+}
+
+.feature-iteam:not(:first-child) {
   margin-left: 30px;
 }
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
